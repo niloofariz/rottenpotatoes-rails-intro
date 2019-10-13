@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebca2d37-4d67-4143-ac87-63ba756f1f5c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/controllers/movies_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/movies_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/movie.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/movie.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/movies/index.html.haml" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/movies/index.html.haml" afterDir="false" />
-    </list>
+    <list default="true" id="ebca2d37-4d67-4143-ac87-63ba756f1f5c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
     <ignored path="$PROJECT_DIR$/log/" />
@@ -25,8 +21,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+            <state relative-caret-position="379">
+              <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -352,12 +348,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570927277480</updated>
-      <workItem from="1570927278723" duration="15510000" />
+      <workItem from="1570927278723" duration="15705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15510000" />
+    <option name="totallyTimeSpent" value="15705000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
@@ -460,8 +456,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/movies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        <state relative-caret-position="379">
+          <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
         </state>
       </provider>
     </entry>
