@@ -11,15 +11,24 @@ class MoviesController < ApplicationController
   end
 
   def index
-    @movies = Movie.all
-    sort = params[:sort] || session[:sort]
-    case sort
+    #@movies = Movie.all
+    @sort = params[:sort] || session[:sort]
+    case @sort
     when 'title'
-      @movies = Movie.order(:title)
+      sort_by = {:title => :asc}
       @title_header = 'hilite'
     when 'release_date'
-      @movies = Movie.order(:release_date)
+      sort_by = {:release_date => :asc}
       @release_date_header = 'hilite'
+    end
+    @all_ratings = Movie.all_ratings
+    @checked_ratings = params[:ratings] || session[:ratings] || {}
+    if @checked_ratings.empty?
+      @checked_ratings = @all_ratings
+      @movies = Movie.with_ratings(@all_ratings, sort_by)
+    else
+      checked_ratings_keys = @checked_ratings.keys
+      @movies = Movie.with_ratings(checked_ratings_keys, sort_by)
     end
 
 
