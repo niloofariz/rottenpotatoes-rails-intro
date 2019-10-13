@@ -23,14 +23,21 @@ class MoviesController < ApplicationController
     end
     @all_ratings = Movie.all_ratings
     @checked_ratings = params[:ratings] || session[:ratings] || {}
+
+    if params[:sort] != session[:sort] or params[:ratings] != session[:ratings]
+      session[:sort] = @sort
+      session[:ratings] = @checked_ratings
+      flash.keep
+      redirect_to :sort => @sort, :ratings => @checked_ratings and return
+    end
+
     if @checked_ratings.empty?
-      @checked_ratings = @all_ratings
+      @checked_ratings = Movie.all_ratings_map
       @movies = Movie.with_ratings(@all_ratings, sort_by)
     else
       checked_ratings_keys = @checked_ratings.keys
       @movies = Movie.with_ratings(checked_ratings_keys, sort_by)
     end
-
 
   end
 
